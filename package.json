@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "0.0.4",
+  "description": "Equities portfolio app for nextcloud",
+  "author": "Jem Atahan",
+  "license": "AGPL-3.0",
+  "private": true,
+  "scripts": {
+    "test": "cross-env NODE_ENV=development webpack --progress --hide-modules --config src/js/webpack.config.js",
+    "live": "cross-env NODE_ENV=development webpack --progress --hot --config src/js/webpack.config.js --watch",
+    "dev": "cross-env NODE_ENV=development webpack --verbose --progress --hide-modules --config src/js/webpack.config.js --watch",
+    "build": "cross-env NODE_ENV=production  webpack --verbose --progress --hide-modules --config src/js/webpack.config.js"
+  },
+  "dependencies": {
+    "css-loader": "^1.0.1",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "cross-env": "^5.2.0",
+    "vue": "^2.5.17",
+    "vue-loader": "^14.2.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

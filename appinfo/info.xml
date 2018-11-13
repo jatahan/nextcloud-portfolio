@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>portfolio</id>
+    <name>Portfolio</name>
+    <summary>Equities Portfolio App</summary>
+    <description><![CDATA[Equities Portfolio App]]></description>
+    <version>0.0.4</version>
+    <licence>agpl</licence>
+    <author mail="jem_portfolio@atadorf.org" >Jem Atahan</author>
+    <namespace>Portfolio</namespace>
+    <category>office</category>
+    <bugs>http://google.com</bugs>
+    <dependencies>
+        <nextcloud min-version="14" max-version="15"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Portfolio</name>
+            <route>portfolio.page.index</route>
+        </navigation>
+    </navigations>
+</info>
